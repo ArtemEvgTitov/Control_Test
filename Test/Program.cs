@@ -11,3 +11,6 @@ string[] FillingArray (string[] array, int wordCount, int wordLenght)
 string[] Array = { "Hi", "Pavel", "I", "am", "writing", "a", "test", 
                 "in", "C#", "It's", "good", "that", "I", "learned", "the", 
                 "material", ":)", "Thank", "you", ":)" };
+                
+Console.Write("\nВведите длинну строк для сортировки: ");
+int wordLenght = Convert.ToInt32(Console.ReadLine());
