@@ -14,3 +14,7 @@ string[] Array = { "Hi", "Pavel", "I", "am", "writing", "a", "test",
                 
 Console.Write("\nВведите длинну строк для сортировки: ");
 int wordLenght = Convert.ToInt32(Console.ReadLine());
+
+int wordCount = WordCount(Array, wordLenght);
+string[] newArray = FillingArray(Array, wordCount, wordLenght);
+ShowArray(newArray);
