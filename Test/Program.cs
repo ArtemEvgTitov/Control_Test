@@ -12,7 +12,12 @@ int WordCount(string[] array, int wordLenght){
     return wordCount;
 }
 
-void ShowArray(string[] array)
+void ShowArray(string[] array){ 
+    for (int i = 0; i < array.GetLength(0); i++)
+        Console.Write(array[i] + " ");
+
+    Console.WriteLine();
+}
 
 string[] FillingArray (string[] array, int wordCount, int wordLenght)
 
