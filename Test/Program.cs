@@ -19,7 +19,19 @@ void ShowArray(string[] array){
     Console.WriteLine();
 }
 
-string[] FillingArray (string[] array, int wordCount, int wordLenght)
+string[] FillingArray (string[] array, int wordCount, int wordLenght){ 
+
+    string[] newArray = new string[wordCount];
+
+    for (int i = 0, j = 0; i < array.Length; i++){
+        if (array[i].Length <= wordLenght){
+            newArray[j] = array[i];
+            j++;
+        }
+    }
+
+    return newArray;
+}
 
 
 string[] Array = { "Hi", "Pavel", "I", "am", "writing", "a", "test", 
